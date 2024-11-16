@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css">
+</head>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1,h2{
+            font-family: sans-serif;
+            font-weight: 400px;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .flex{
+            display: flex;
+
+        }
+        .flex_space{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        button{
+            border: none;
+            background: none;
+            outline: none;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .primary-btn{
+            padding: 15px 40px;
+            background: #7fc142;
+            font-weight: bold;
+            color: white;
+        }
+        .secondary-btn{
+            padding: 15px 40px;
+            background:none;
+            border: 2px solid white;
+            font-weight: bold;
+            color: rgb(177, 80, 80);
+        }
+        .container{
+            max-width: 85%;
+            margin: auto;
+            
+        }
+
+        header{
+            height: 10vh;
+            line-height: 10vh;
+            padding: 0 20px;
+        }
+        header img{
+            margin: 20px 0;
+        }
+        header ul{
+            display: inline-block;
+        }
+        header ul li{
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        header ul li a{
+            color: #000;
+            margin: 0 10px;
+            transition: 0.5s;
+            
+        }
+        header ul li a:hover{
+            color: #7fc142;
+
+        }
+        header i{
+            margin: 0 20px ;
+        }
+        header button{
+            padding: 13px 14px;
+        }
+        header.navlinks span{
+            display: none;
+
+        }
+        @media only screen and (max-width:768px){
+            header ul{
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                width: 100%;
+                height: 100vh;
+                border-color: rgb(25, 211, 149);
+                overflow: hidden;
+                transition: max-height 0.5s;
+                text-align: center;
+                z-index: 9;
+
+            }
+            header ul li{
+                display: block;
+            }
+            header li a{
+                color: white;
+            }
+            header i{
+                color: rgb(244, 82, 82);
+            }
+            header.navlinks span{
+                color: black;
+                display: block;
+                cursor: pointer;
+                line-height: 10vh;
+                font-style: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+            <div class="LOGO">
+                <img src="" alt="">
+            </div>
+            <div class="navLinks">
+                <ul id="MENO LIST">
+                    <li> <a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#rooms">rooms</a></li>
+                    <li><a href="#pages">pages</a></li>
+                    <li><a href="#news">news</a></li>
+                    <li><a href="#contacts">contacts</a></li>
+                    <li><i class="fa fa-search"></i></li>
+                    <li><button class="primary-btn">BOOK NOW</button></li>
+
+                </ul>
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <script>
+        var menulist=document.getElementById('menulist');
+        menulist.style.maxHeight="0px";
+    
+        function menutoggle(){
+            if( menulist.style.maxHeight=="0px"){
+                menulist.style.maxHeight="100vh";
+            }else
+            {
+                menulist.style.maxHeight="0px";
+            }
+        }
+
+    </script>
+    <section class="home">
+        <div class="content">
+
+        </div>
+    </section>
+    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"></script>
+    
+</body>
+</html>
